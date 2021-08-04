@@ -1,7 +1,7 @@
-.App {
+.App-header {
   text-align: center;
   margin: 50px auto;
 }
-strong {
-  font-size: 100px;
+.App-footer {
+  text-align: center;
 }

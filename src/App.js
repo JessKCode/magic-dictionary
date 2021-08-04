@@ -10,7 +10,7 @@ function App() {
       <main>
         <Dictionary />
       </main>
-      <footer>
+      <footer className="App-footer">
         Coded by Jessica Carter
       </footer>
     </div>

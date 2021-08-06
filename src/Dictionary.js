@@ -8,12 +8,20 @@ export default function Dictionary (){
   function handleKeywordChange (event){
     setKeyword(event.target.value);
     
+  }
+
+  function handleResponse(response){
+    console.log(response.data);
 
   }
 
   function search(event){
     event.preventDefault(); 
     alert(`Searching for ${keyword} ...`);
+
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiUrl).then(handleResponse);
+
   }
   
   return (

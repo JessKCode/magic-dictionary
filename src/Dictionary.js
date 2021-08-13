@@ -5,7 +5,7 @@ import Results from "./Results.js";
 
 export default function Dictionary (){
   let [keyword, setKeyword] = useState ("");
-  let [result, setResult] = useState({});
+  let [result, setResult] = useState(null);
 
   function handleKeywordChange (event){
     setKeyword(event.target.value);
@@ -13,7 +13,6 @@ export default function Dictionary (){
   }
 
   function handleResponse(response){
-    console.log(response.data[0].meanings[0].definitions[0].definition);
     setResult(response.data[0])
 
   }

@@ -6,7 +6,8 @@ if (props.synonyms) {
     <div className="Synonyms">
       <strong>Synonyms:</strong>
     {props.synonyms.map(function(synonym, index){
-    return <span key={index}> {synonym} </span>;
+    return <ul key={index}>
+      <li > {synonym} </li></ul> ;
       })}
   </div> 
   );

@@ -3,8 +3,8 @@ import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results.js";
 
-export default function Dictionary (){
-  let [keyword, setKeyword] = useState ("Magic");
+export default function Dictionary (props){
+  let [keyword, setKeyword] = useState (props.defaultKeyword);
   let [result, setResult] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
@@ -30,8 +30,10 @@ export default function Dictionary (){
     return (
     <div className="Dictionary">
       <section className="search">
+        <h3 className="lable">Search</h3>
         <form onSubmit={handleSubmit}>
-      <input type="search" autoFocus={true} onChange={handleKeywordChange} />
+      <input type="search" autoFocus={true} onChange={handleKeywordChange}
+      defaultValue={props.defaultKeyword} />
       </form>
        </section>
          <Results results={result} />

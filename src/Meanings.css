@@ -1,0 +1,15 @@
+.Meanings .definition {
+  padding: 10px 0 10px 0;
+  font-size: 17px;
+}
+.Meanings .definition:first-letter {
+  text-transform: capitalize;
+}
+.Meanings .example {
+  padding: 10px 0 10px 0;
+  font-style: italic;
+  color: #2e2e30ef;
+}
+.Meanings .example:first-letter {
+  text-transform: capitalize;
+}

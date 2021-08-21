@@ -1,3 +1,13 @@
+body {
+  background-color: #c2b0a0;
+  color: #3b3958;
+}
+h1 {
+  font-size: 45px;
+}
+a {
+  color: #f64573;
+}
 .App-header {
   text-align: center;
   margin: 50px auto;

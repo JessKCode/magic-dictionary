@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1> ✴︎ Dictionary ✴︎ </h1>
+        <h1> Dictionary </h1>
       </header>
       <main>
-        <Dictionary defaultKeyword="Magic"/>
+        <Dictionary defaultKeyword="Cat"/>
       </main>
       <footer className="App-footer">
         Coded by Jessica Carter
